@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <%= t.include("partials/_head.html") %>
+    <%= t.include("partials/_analytics_hearst.html") %>
+  </head>
+  <script>  var HDN = HDN || {}  </script>
+
+  <body>
+
+    <responsive-child>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;">Tote bag poutine cronut, tattooed four dollar toast locavore williamsburg thundercats godard cray biodiesel before they sold out messenger bag synth. Gentrify flexitarian austin wayfarers, tote bag meh messenger bag crucifix meggings 90's meditation butcher hoodie. Umami before they sold out small batch four dollar toast schlitz retro, messenger bag squid heirloom banh mi gluten-free knausgaard cronut sustainable. Jean shorts blog bespoke tattooed sriracha 8-bit, disrupt photo booth twee roof party. Kinfolk marfa messenger bag, truffaut ugh flexitarian before they sold out four dollar toast keffiyeh. Chambray vinyl trust fund flannel, lo-fi four dollar toast ethical neutra normcore cronut master cleanse hella butcher. Hoodie celiac helvetica, freegan pabst migas dreamcatcher tacos stumptown vinyl yr.</div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;">Tote bag poutine cronut, tattooed four dollar toast locavore williamsburg thundercats godard cray biodiesel before they sold out messenger bag synth. Gentrify flexitarian austin wayfarers, tote bag meh messenger bag crucifix meggings 90's meditation butcher hoodie. Umami before they sold out small batch four dollar toast schlitz retro, messenger bag squid heirloom banh mi gluten-free knausgaard cronut sustainable.</div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;"> Jean shorts blog bespoke tattooed sriracha 8-bit, disrupt photo booth twee roof party. Kinfolk marfa messenger bag, truffaut ugh flexitarian before they sold out four dollar toast keffiyeh. Chambray vinyl trust fund flannel, lo-fi four dollar toast ethical neutra normcore cronut master cleanse hella butcher. Hoodie celiac helvetica, freegan pabst migas dreamcatcher tacos stumptown vinyl yr.</div>
+
+    <div id="statement">
+      The California Legislature spends millions of dollars each year debating and passing resolutions that <span class="highlight" id="event"></span>
+    </div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;">Tote bag poutine cronut, tattooed four dollar toast locavore williamsburg thundercats godard cray biodiesel before they sold out messenger bag synth. Gentrify flexitarian austin wayfarers, tote bag meh messenger bag crucifix meggings 90's meditation butcher hoodie. Umami before they sold out small batch four dollar toast schlitz retro, messenger bag squid heirloom banh mi gluten-free knausgaard cronut sustainable. Jean shorts blog bespoke tattooed sriracha 8-bit, disrupt photo booth twee roof party. Kinfolk marfa messenger bag, truffaut ugh flexitarian before they sold out four dollar toast keffiyeh. Chambray vinyl trust fund flannel, lo-fi four dollar toast ethical neutra normcore cronut master cleanse hella butcher. Hoodie celiac helvetica, freegan pabst migas dreamcatcher tacos stumptown vinyl yr.</div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;">Tote bag poutine cronut, tattooed four dollar toast locavore williamsburg thundercats godard cray biodiesel before they sold out messenger bag synth. Gentrify flexitarian austin wayfarers, tote bag meh messenger bag crucifix meggings 90's meditation butcher hoodie. Umami before they sold out small batch four dollar toast schlitz retro, messenger bag squid heirloom banh mi gluten-free knausgaard cronut sustainable.</div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 30px 0;"> Jean shorts blog bespoke tattooed sriracha 8-bit, disrupt photo booth twee roof party. Kinfolk marfa messenger bag, truffaut ugh flexitarian before they sold out four dollar toast keffiyeh. Chambray vinyl trust fund flannel, lo-fi four dollar toast ethical neutra normcore cronut master cleanse hella butcher. Hoodie celiac helvetica, freegan pabst migas dreamcatcher tacos stumptown vinyl yr.</div>
+
+    </responsive-child>
+
+    <script>
+      var resolutionsData = <%= JSON.stringify(csv.resolutions_data) %>;
+    </script>
+    <script src="app.js" async></script>
+    <%= t.include("partials/_helloSFC.html") %>
+
+  </body>
+</html>
