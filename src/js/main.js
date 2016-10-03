@@ -32,4 +32,4 @@ function changeText() {
 }
 
 changeText();
-setInterval(changeText,5000);
+setInterval(changeText,3000);
